@@ -70,8 +70,8 @@
     </div>
 
     <div class="notice">
-      📢 कृपया भुक्तानी गरेपछि तल विवरण भरी Send थिच्नुहोस्।
-      त्यसपछि WhatsApp खुल्नेछ, त्यहाँबाट Message पठाउनुहोस्।
+      📢 कृपया भुक्तानी गरेपछि तल विवरण भरी Send थिच्नुहोस् ।
+      त्यसपछि WhatsApp खुल्नेछ, त्यहाँबाट Message पठाउनुहोस् ।
     </div>
 
     <form class="registration-form" id="registrationForm">
@@ -103,7 +103,7 @@
 </footer>
 
 <script>
-  const SCRIPT_URL = "YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbynzp7PfrldIf9238RKvHR4XMaR9sTK-E_XGS2qQz6VuKDrCr-udJHylSj9an6Oxu-yVg/exec";
 
   let settings = {};
 
@@ -117,7 +117,7 @@
       .then(response => response.json())
       .then(data => {
         if (!data.success) {
-          alert("Data load हुन सकेन।");
+          alert("Data load हुन सकेन ।");
           return;
         }
 
@@ -150,7 +150,7 @@
         });
       })
       .catch(() => {
-        alert("Apps Script Link मिलेन वा Deploy public छैन।");
+        alert("Apps Script Link मिलेन वा Deploy public छैन ।");
       });
   }
 
@@ -163,7 +163,7 @@
     const email = document.getElementById("email").value.trim();
 
     if (!name || !club || !contact) {
-      alert("कृपया Name, Club Name र Contact Number अनिवार्य भर्नुहोस्।");
+      alert("कृपया Name, Club Name र Contact Number अनिवार्य भर्नुहोस् ।");
       return;
     }
 
@@ -210,7 +210,7 @@
       }, 1200);
     })
     .catch(() => {
-      alert("Data save हुन सकेन। Apps Script URL / Deployment check गर्नुहोस्।");
+      alert("Data save हुन सकेन। Apps Script URL / Deployment check गर्नुहोस् ।");
       btn.disabled = false;
       btn.innerText = "Send";
     });
